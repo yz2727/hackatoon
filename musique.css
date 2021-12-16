@@ -1,0 +1,64 @@
+*{font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+body{
+    background-image: url(image_video/qlf.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+
+.album img{
+    width: 300px;
+    height: 300px;
+    
+}
+.clip video{
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+
+.slider{
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+@keyframes slide{
+    0% {
+        transform:  translateX(0);
+    }
+    10% {
+        transform:  translateX(0)
+        ;
+    }
+    33% {
+        transform:  translateX(-300px);
+    }
+    43% {
+        transform:  translateX(-300px);
+    }
+    66%{
+        transform: translateX(-600px);
+    }
+    76% { transform: translateX(-600px);
+
+    }
+    86%{transform: translateX(-600px);}
+    100% {
+        transform:  translateX(0)
+    }
+}
+.slides{
+    width: calc(300px * 4);
+    animation: slide 3s infinite;
+}
+.slide{
+    float: left;
+}
